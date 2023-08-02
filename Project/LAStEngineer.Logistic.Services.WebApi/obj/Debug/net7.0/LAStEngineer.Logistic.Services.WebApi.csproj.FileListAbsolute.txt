@@ -1,10 +1,3 @@
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.csproj.AssemblyReference.cache
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.GeneratedMSBuildEditorConfig.editorconfig
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.AssemblyInfoInputs.cache
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.AssemblyInfo.cs
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.csproj.CoreCompileInputs.cache
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\appsettings.Development.json
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\appsettings.json
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.exe
@@ -18,9 +11,17 @@ D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAS
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\EntityFramework.SqlServer.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\EntityFramework.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\FluentValidation.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Newtonsoft.Json.dll
@@ -31,6 +32,7 @@ D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAS
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Data.SqlClient.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Security.Permissions.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\System.Windows.Extensions.dll
@@ -58,6 +60,13 @@ D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAS
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Interface.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\LAStEngineer.Logistic.Domain.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.csproj.AssemblyReference.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.AssemblyInfoInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.AssemblyInfo.cs
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.csproj.CoreCompileInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.LAStEngineer.Logistic.Services.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.build.LAStEngineer.Logistic.Services.WebApi.props
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.LAStEngineer.Logistic.Services.WebApi.props
@@ -72,4 +81,4 @@ D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAS
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.genruntimeconfig.cache
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\obj\Debug\net7.0\ref\LAStEngineer.Logistic.Services.WebApi.dll
-D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Services.WebApi\bin\Debug\net7.0\LAStEngineer.Logistic.Services.WebApi.xml

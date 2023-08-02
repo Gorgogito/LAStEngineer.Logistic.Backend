@@ -20,7 +20,7 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleInsert";
+        var query = "UserInsert";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", entity.KeyId);
         parameters.Add("UserName", entity.UserName);
@@ -50,12 +50,20 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleUpdate";
+        var query = "UserUpdate";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", entity.KeyId);
-        parameters.Add("Name", entity.Name);
+        parameters.Add("UserName", entity.UserName);
+        parameters.Add("Password", entity.Password);
         parameters.Add("Description", entity.Description);
         parameters.Add("Observation", entity.Observation);
+        parameters.Add("Names", entity.Names);
+        parameters.Add("Surnames", entity.Surnames);
+        parameters.Add("Phone", entity.Phone);
+        parameters.Add("EMail", entity.EMail);
+        parameters.Add("Image", entity.Image);
+        parameters.Add("Token", entity.Token);
+        parameters.Add("RoleId", entity.RoleId);
         parameters.Add("StateId", entity.StateId);
         parameters.Add("IsSystem", entity.IsSystem);
         parameters.Add("CreatedDate", entity.CreatedDate);
@@ -72,7 +80,7 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleDelete";
+        var query = "UserDelete";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", id);
         var result = connection.Execute(query, param: parameters, commandType: CommandType.StoredProcedure);
@@ -84,11 +92,11 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleGetByID";
+        var query = "UserGetByID";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", id);
 
-        var entity = connection.QuerySingle<Role>(query, param: parameters, commandType: CommandType.StoredProcedure);
+        var entity = connection.QuerySingle<User>(query, param: parameters, commandType: CommandType.StoredProcedure);
         return entity;
       }
     }
@@ -97,9 +105,9 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleList";
+        var query = "UserList";
 
-        var entities = connection.Query<Role>(query, commandType: CommandType.StoredProcedure);
+        var entities = connection.Query<User>(query, commandType: CommandType.StoredProcedure);
         return entities;
       }
     }
@@ -112,14 +120,14 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
       parameters.Add("PageNumber", pageNumber);
       parameters.Add("PageSize", pageSize);
 
-      var entities = connection.Query<Role>(query, param: parameters, commandType: CommandType.StoredProcedure);
+      var entities = connection.Query<User>(query, param: parameters, commandType: CommandType.StoredProcedure);
       return entities;
     }
 
     public int Count()
     {
       using var connection = _context.CreateConnection();
-      var query = "Select Count(*) from [Role]";
+      var query = "Select Count(*) from [User]";
 
       var count = connection.ExecuteScalar<int>(query, commandType: CommandType.Text);
       return count;
@@ -133,12 +141,20 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleInsert";
+        var query = "UserInsert";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", entity.KeyId);
-        parameters.Add("Name", entity.Name);
+        parameters.Add("UserName", entity.UserName);
+        parameters.Add("Password", entity.Password);
         parameters.Add("Description", entity.Description);
         parameters.Add("Observation", entity.Observation);
+        parameters.Add("Names", entity.Names);
+        parameters.Add("Surnames", entity.Surnames);
+        parameters.Add("Phone", entity.Phone);
+        parameters.Add("EMail", entity.EMail);
+        parameters.Add("Image", entity.Image);
+        parameters.Add("Token", entity.Token);
+        parameters.Add("RoleId", entity.RoleId);
         parameters.Add("StateId", entity.StateId);
         parameters.Add("IsSystem", entity.IsSystem);
         parameters.Add("CreatedDate", entity.CreatedDate);
@@ -155,12 +171,20 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleUpdate";
+        var query = "UserUpdate";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", entity.KeyId);
-        parameters.Add("Name", entity.Name);
+        parameters.Add("UserName", entity.UserName);
+        parameters.Add("Password", entity.Password);
         parameters.Add("Description", entity.Description);
         parameters.Add("Observation", entity.Observation);
+        parameters.Add("Names", entity.Names);
+        parameters.Add("Surnames", entity.Surnames);
+        parameters.Add("Phone", entity.Phone);
+        parameters.Add("EMail", entity.EMail);
+        parameters.Add("Image", entity.Image);
+        parameters.Add("Token", entity.Token);
+        parameters.Add("RoleId", entity.RoleId);
         parameters.Add("StateId", entity.StateId);
         parameters.Add("IsSystem", entity.IsSystem);
         parameters.Add("CreatedDate", entity.CreatedDate);
@@ -177,7 +201,7 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleDelete";
+        var query = "UserDelete";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", id);
         var result = await connection.ExecuteAsync(query, param: parameters, commandType: CommandType.StoredProcedure);
@@ -189,11 +213,11 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleGetByID";
+        var query = "UserGetByID";
         var parameters = new DynamicParameters();
         parameters.Add("KeyId", id);
 
-        var entity = await connection.QuerySingleAsync<Role>(query, param: parameters, commandType: CommandType.StoredProcedure);
+        var entity = await connection.QuerySingleAsync<User>(query, param: parameters, commandType: CommandType.StoredProcedure);
         return entity;
       }
     }
@@ -202,9 +226,9 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     {
       using (var connection = _context.CreateConnection())
       {
-        var query = "RoleList";
+        var query = "UserList";
 
-        var entities = await connection.QueryAsync<Role>(query, commandType: CommandType.StoredProcedure);
+        var entities = await connection.QueryAsync<User>(query, commandType: CommandType.StoredProcedure);
         return entities;
       }
     }
@@ -212,19 +236,19 @@ namespace LAStEngineer.Logistic.Infrastructure.Repositories.Main
     public async Task<IEnumerable<User>> GetAllWithPaginationAsync(int pageNumber, int pageSize)
     {
       using var connection = _context.CreateConnection();
-      var query = "RoleListWithPagination";
+      var query = "UserListWithPagination";
       var parameters = new DynamicParameters();
       parameters.Add("PageNumber", pageNumber);
       parameters.Add("PageSize", pageSize);
 
-      var entities = await connection.QueryAsync<Role>(query, param: parameters, commandType: CommandType.StoredProcedure);
+      var entities = await connection.QueryAsync<User>(query, param: parameters, commandType: CommandType.StoredProcedure);
       return entities;
     }
 
     public async Task<int> CountAsync()
     {
       using var connection = _context.CreateConnection();
-      var query = "Select Count(*) from [Role]";
+      var query = "Select Count(*) from [User]";
 
       var count = await connection.ExecuteScalarAsync<int>(query, commandType: CommandType.Text);
       return count;

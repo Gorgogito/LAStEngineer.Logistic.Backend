@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "LAStEngineer.Logistic.Application.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/LAStEngineer.Logistic.Application.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAStEngineer.Logistic.Application.DTO.dll": {}
+        }
       }
     }
   },
@@ -40,11 +50,17 @@
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
+    },
+    "LAStEngineer.Logistic.Application.DTO/1.0.0": {
+      "type": "project",
+      "path": "../LAStEngineer.Logistic.Application.DTO/LAStEngineer.Logistic.Application.DTO.csproj",
+      "msbuildProject": "../LAStEngineer.Logistic.Application.DTO/LAStEngineer.Logistic.Application.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FluentValidation >= 11.6.0"
+      "FluentValidation >= 11.6.0",
+      "LAStEngineer.Logistic.Application.DTO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -80,7 +96,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj": {
+              "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

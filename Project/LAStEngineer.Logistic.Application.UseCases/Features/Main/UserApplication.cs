@@ -4,6 +4,7 @@ using LAStEngineer.Logistic.Application.Interface.UseCases;
 using LAStEngineer.Logistic.Application.Interface;
 using LAStEngineer.Logistic.Cross.Common;
 using LAStEngineer.Logistic.Domain.Entities.Main;
+using LAStEngineer.Logistic.Application.Validator;
 
 namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 {

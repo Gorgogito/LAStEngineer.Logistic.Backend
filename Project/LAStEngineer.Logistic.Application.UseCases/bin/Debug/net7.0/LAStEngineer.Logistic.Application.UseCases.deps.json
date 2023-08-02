@@ -12,6 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "LAStEngineer.Logistic.Application.DTO": "1.0.0",
           "LAStEngineer.Logistic.Application.Interface": "1.0.0",
+          "LAStEngineer.Logistic.Application.Validator": "1.0.0",
           "LAStEngineer.Logistic.Cross.Common": "1.0.0",
           "LAStEngineer.Logistic.Domain": "1.0.0"
         },
@@ -402,6 +403,15 @@
           "LAStEngineer.Logistic.Application.Interface.dll": {}
         }
       },
+      "LAStEngineer.Logistic.Application.Validator/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.6.0",
+          "LAStEngineer.Logistic.Application.DTO": "1.0.0"
+        },
+        "runtime": {
+          "LAStEngineer.Logistic.Application.Validator.dll": {}
+        }
+      },
       "LAStEngineer.Logistic.Cross.Common/1.0.0": {
         "dependencies": {
           "FluentValidation": "11.6.0"
@@ -686,6 +696,11 @@
       "sha512": ""
     },
     "LAStEngineer.Logistic.Application.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LAStEngineer.Logistic.Application.Validator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

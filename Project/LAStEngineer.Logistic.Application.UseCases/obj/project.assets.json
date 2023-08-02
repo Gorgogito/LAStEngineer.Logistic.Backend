@@ -646,6 +646,20 @@
           "bin/placeholder/LAStEngineer.Logistic.Application.Interface.dll": {}
         }
       },
+      "LAStEngineer.Logistic.Application.Validator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FluentValidation": "11.6.0",
+          "LAStEngineer.Logistic.Application.DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LAStEngineer.Logistic.Application.Validator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAStEngineer.Logistic.Application.Validator.dll": {}
+        }
+      },
       "LAStEngineer.Logistic.Cross.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1797,6 +1811,11 @@
       "path": "../LAStEngineer.Logistic.Application.Interface/LAStEngineer.Logistic.Application.Interface.csproj",
       "msbuildProject": "../LAStEngineer.Logistic.Application.Interface/LAStEngineer.Logistic.Application.Interface.csproj"
     },
+    "LAStEngineer.Logistic.Application.Validator/1.0.0": {
+      "type": "project",
+      "path": "../LAStEngineer.Logistic.Application.Validator/LAStEngineer.Logistic.Application.Validator.csproj",
+      "msbuildProject": "../LAStEngineer.Logistic.Application.Validator/LAStEngineer.Logistic.Application.Validator.csproj"
+    },
     "LAStEngineer.Logistic.Cross.Common/1.0.0": {
       "type": "project",
       "path": "../LAStEngineer.Logistic.Cross.Common/LAStEngineer.Logistic.Cross.Common.csproj",
@@ -1814,6 +1833,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "LAStEngineer.Logistic.Application.DTO >= 1.0.0",
       "LAStEngineer.Logistic.Application.Interface >= 1.0.0",
+      "LAStEngineer.Logistic.Application.Validator >= 1.0.0",
       "LAStEngineer.Logistic.Cross.Common >= 1.0.0",
       "LAStEngineer.Logistic.Domain >= 1.0.0"
     ]
@@ -1857,6 +1877,9 @@
             },
             "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj": {
               "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj"
+            },
+            "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Validator\\LAStEngineer.Logistic.Application.Validator.csproj": {
+              "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Validator\\LAStEngineer.Logistic.Application.Validator.csproj"
             },
             "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj": {
               "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj"

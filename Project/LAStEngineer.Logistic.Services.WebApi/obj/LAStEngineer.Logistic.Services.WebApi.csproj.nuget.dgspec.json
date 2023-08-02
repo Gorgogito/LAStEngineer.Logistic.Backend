@@ -172,6 +172,9 @@
               "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj": {
                 "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj"
               },
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Validator\\LAStEngineer.Logistic.Application.Validator.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Validator\\LAStEngineer.Logistic.Application.Validator.csproj"
+              },
               "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj": {
                 "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj"
               },
@@ -249,7 +252,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -571,6 +578,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
               "version": "[5.1.0, )"
@@ -586,6 +597,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.32.1, )"
             }
           },
           "imports": [

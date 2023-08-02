@@ -1,11 +1,14 @@
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.deps.json
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.csproj.AssemblyReference.cache
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.GeneratedMSBuildEditorConfig.editorconfig
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.AssemblyInfoInputs.cache
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.AssemblyInfo.cs
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.csproj.CoreCompileInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.csproj.CopyComplete
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\refint\LAStEngineer.Logistic.Application.Validator.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.Validator\obj\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.pdb

@@ -614,18 +614,16 @@ CREATE PROCEDURE [dbo].[UserInsert]
 (
  @KeyId            nvarchar(5),
  @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
- @UserName         nvarchar(450),
-
-
+ @Password         nvarchar(max),
  @Description      nvarchar(max),
  @Observation      nvarchar(max),
+ @Names            nvarchar(max),
+ @Surnames         nvarchar(max),
+ @Phone            nvarchar(max),
+ @EMail            nvarchar(max),
+ @Image            varbinary(max),
+ @Token            nvarchar(max),
+ @RoleId           nvarchar(5),
  @StateId          nvarchar(2),
  @IsSystem         bit,
  @CreatedDate      datetime2(7),
@@ -635,8 +633,8 @@ CREATE PROCEDURE [dbo].[UserInsert]
 )
 AS
 BEGIN
-  INSERT INTO Role([KeyId], [Name], [Description], [Observation], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy])
-  VALUES(@KeyId, @Name, @Description, @Observation, @StateId, @IsSystem, @CreatedDate, @CreatedBy, @LastModifiedDate, @LastModifiedBy);
+  INSERT INTO [User]([KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy])
+  VALUES(@KeyId, @UserName, @Password, @Description, @Observation, @Names, @Surnames, @Phone, @EMail, @Image, @Token, @RoleId, @StateId, @IsSystem, @CreatedDate, @CreatedBy, @LastModifiedDate, @LastModifiedBy);
 END
 GO
 
@@ -644,12 +642,20 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[RoleUpdate]
+CREATE PROCEDURE [dbo].[UserUpdate]
 (
  @KeyId            nvarchar(5),
- @Name             nvarchar(max),
+ @UserName         nvarchar(450),
+ @Password         nvarchar(max),
  @Description      nvarchar(max),
  @Observation      nvarchar(max),
+ @Names            nvarchar(max),
+ @Surnames         nvarchar(max),
+ @Phone            nvarchar(max),
+ @EMail            nvarchar(max),
+ @Image            varbinary(max),
+ @Token            nvarchar(max),
+ @RoleId           nvarchar(5),
  @StateId          nvarchar(2),
  @IsSystem         bit,
  @CreatedDate      datetime2(7),
@@ -659,11 +665,19 @@ CREATE PROCEDURE [dbo].[RoleUpdate]
 )
 AS
 BEGIN
-  UPDATE [Role]
+  UPDATE [User]
     SET
-      [Name]             = @Name,
+      [UserName]         = @UserName,
+      [Password]         = @Password,
       [Description]      = @Description,
       [Observation]      = @Observation,
+      [Names]            = @Names,
+      [Surnames]         = @Surnames,
+      [Phone]            = @Phone,
+      [EMail]            = @EMail,
+      [Image]            = @Image,
+      [Token]            = @Token,
+      [RoleId]           = @RoleId,
       [StateId]          = @StateId,
       [IsSystem]         = @IsSystem,
       [CreatedDate]      = @CreatedDate,
@@ -678,11 +692,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[RoleDelete]
+CREATE PROCEDURE [dbo].[UserDelete]
 (@KeyId nvarchar(5))
 AS
 BEGIN
-  DELETE [Role]
+  DELETE [User]
   WHERE KeyId = @KeyId;
 END
 GO
@@ -691,12 +705,12 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[RoleGetByID]
+CREATE PROCEDURE [dbo].[UserGetByID]
 (@KeyId nvarchar(5))
 AS
 BEGIN
-  SELECT [KeyId], [Name], [Description], [Observation], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
-  FROM [Role]
+  SELECT [KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [User]
   WHERE KeyId = @KeyId;
 END
 GO
@@ -705,11 +719,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[RoleList]
+CREATE PROCEDURE [dbo].[UserList]
 AS
 BEGIN
-  SELECT [KeyId], [Name], [Description], [Observation], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
-  FROM [Role];
+  SELECT [KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [User];
 END
 GO
 
@@ -717,17 +731,35 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-CREATE PROCEDURE [dbo].[RoleListWithPagination]
+CREATE PROCEDURE [dbo].[UserListWithPagination]
 (
   @PageNumber int,
   @PageSize   int
 )
 AS
 BEGIN
-  SELECT [KeyId], [Name], [Description], [Observation], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
-  FROM [Role]
-  ORDER BY [Name], [Description]
+  SELECT [KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [User]
+  ORDER BY [UserName], [Description]
   OFFSET (@PageNumber - 1) * @PageSize ROWS
   FETCH NEXT @PageSize ROWS ONLY
+END
+GO
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[UserGetByUserAndPassword]
+(
+  @UserName varchar(50),
+  @Password varchar(50)
+)
+AS
+BEGIN
+    SELECT [KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+    FROM [User]
+    WHERE UserName = @UserName and Password = DBO.EncryptString(@Password, '@');
 END
 GO

@@ -1,5 +1,6 @@
 ﻿using LAStEngineer.Logistic.Application.Interface.UseCases;
 using LAStEngineer.Logistic.Application.UseCases.Features.Main;
+using LAStEngineer.Logistic.Application.Validator;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -13,8 +14,9 @@ namespace LAStEngineer.Logistic.Application.UseCases
       services.AddScoped<ICompanyApplication, CompanyApplication>();
       services.AddScoped<IRoleApplication, RoleApplication>();
       services.AddScoped<IUserApplication, UserApplication>();
-      //services.AddTransient<UsersDtoValidator>();
+      services.AddScoped<IAuthenticationApplication, AuthenticationApplication>();
 
+      services.AddTransient<UsersDtoValidator>();
       return services;
     }
   }

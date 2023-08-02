@@ -11,22 +11,16 @@ namespace LAStEngineer.Logistic.Infrastructure
   public static class InfrastructureServiceRegistration
   {
 
-    //public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
-    //{
-    //  services.AddSingleton<IdentityDbContext>();
-    //  services.AddScoped<ICompanyRepository, CompanyRepository>();
-    //  services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-    //  return services;
-    //}
-
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
       services.AddSingleton<IdentityDbContext>();
       services.AddScoped<IUnitOfWork, UnitOfWork>();
+
       services.AddScoped<ICompanyRepository, CompanyRepository>();
       services.AddScoped<IRoleRepository, RoleRepository>();
-      
+      services.AddScoped<IUserRepository, UserRepository>();
+      services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+
       return services;
     }
 

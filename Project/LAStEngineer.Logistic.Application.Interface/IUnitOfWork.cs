@@ -11,6 +11,7 @@ namespace LAStEngineer.Logistic.Application.Interface
     ICompanyRepository CompanyRepository { get; }
     IRoleRepository RoleRepository { get; }
     IUserRepository UserRepository { get; }
+    IAuthenticationRepository AuthenticationRepository { get; }
 
   }
 }

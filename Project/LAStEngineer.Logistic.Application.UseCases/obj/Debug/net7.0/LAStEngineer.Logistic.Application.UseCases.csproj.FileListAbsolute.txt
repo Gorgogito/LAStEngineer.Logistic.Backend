@@ -4,10 +4,12 @@ D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAS
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.UseCases.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Interface.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Domain.dll
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Interface.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Application.Validator.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\bin\Debug\net7.0\LAStEngineer.Logistic.Domain.pdb
 D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.UseCases\obj\Debug\net7.0\LAStEngineer.Logistic.Application.UseCases.csproj.AssemblyReference.cache
