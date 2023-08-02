@@ -1,0 +1,12 @@
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.deps.json
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\bin\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.csproj.AssemblyReference.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.AssemblyInfoInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.AssemblyInfo.cs
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.csproj.CoreCompileInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\refint\LAStEngineer.Logistic.Application.DTO.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\LAStEngineer.Logistic.Application.DTO.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Application.DTO\obj\Debug\net7.0\ref\LAStEngineer.Logistic.Application.DTO.dll

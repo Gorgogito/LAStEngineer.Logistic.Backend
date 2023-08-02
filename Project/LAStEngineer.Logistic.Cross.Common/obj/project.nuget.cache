@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "XoZTFl2Q+qk5KsH8FQi8v5G9SSGvWQ+9u6WzKBMxp1bPbNlFKNH10UBYfrXNMuCNVfSJ5YBS3NdzyFsVF5qevQ==",
+  "success": true,
+  "projectFilePath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ta_jo\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Está ejecutando la operación \"restore\" con un origen \"HTTP\", \"http://nuget.grapecity.com/nuget\". El acceso que no sea HTTPS se quitará en una versión futura. Considere la posibilidad de migrar a un origen \"HTTPS\"."
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Infrastructure\\LAStEngineer.Logistic.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj",
+        "projectName": "LAStEngineer.Logistic.Application.DTO",
+        "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj",
+        "packagesPath": "C:\\Users\\ta_jo\\.nuget\\packages\\",
+        "outputPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ta_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj",
+        "projectName": "LAStEngineer.Logistic.Application.Interface",
+        "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj",
+        "packagesPath": "C:\\Users\\ta_jo\\.nuget\\packages\\",
+        "outputPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ta_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.DTO\\LAStEngineer.Logistic.Application.DTO.csproj"
+              },
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj"
+              },
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj",
+        "projectName": "LAStEngineer.Logistic.Cross.Common",
+        "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\LAStEngineer.Logistic.Cross.Common.csproj",
+        "packagesPath": "C:\\Users\\ta_jo\\.nuget\\packages\\",
+        "outputPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Cross.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ta_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj",
+        "projectName": "LAStEngineer.Logistic.Domain",
+        "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj",
+        "packagesPath": "C:\\Users\\ta_jo\\.nuget\\packages\\",
+        "outputPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ta_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Infrastructure\\LAStEngineer.Logistic.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Infrastructure\\LAStEngineer.Logistic.Infrastructure.csproj",
+        "projectName": "LAStEngineer.Logistic.Infrastructure",
+        "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Infrastructure\\LAStEngineer.Logistic.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ta_jo\\.nuget\\packages\\",
+        "outputPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ta_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "http://nuget.grapecity.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Application.Interface\\LAStEngineer.Logistic.Application.Interface.csproj"
+              },
+              "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj": {
+                "projectPath": "D:\\Mys Proyectos\\LAStEngineer\\Logistic\\LAStEngineer.Logistic.Backend\\Project\\LAStEngineer.Logistic.Domain\\LAStEngineer.Logistic.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

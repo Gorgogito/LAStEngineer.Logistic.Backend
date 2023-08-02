@@ -1,0 +1,12 @@
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.deps.json
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\bin\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.csproj.AssemblyReference.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.AssemblyInfoInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.AssemblyInfo.cs
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.csproj.CoreCompileInputs.cache
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\refint\LAStEngineer.Logistic.Cross.Common.dll
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\LAStEngineer.Logistic.Cross.Common.pdb
+D:\Mys Proyectos\LAStEngineer\Logistic\LAStEngineer.Logistic.Backend\Project\LAStEngineer.Logistic.Cross.Common\obj\Debug\net7.0\ref\LAStEngineer.Logistic.Cross.Common.dll
