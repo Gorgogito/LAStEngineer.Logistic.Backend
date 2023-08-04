@@ -13,6 +13,8 @@ namespace LAStEngineer.Logistic.Application.UseCases.Mappings
       CreateMap<Company, CompanyDTO>();
       CreateMap<Role, RoleDTO>();
       CreateMap<User, UserDTO>();
+      CreateMap<Status, StatusDTO>();
+      CreateMap<Role_x_Company, Role_x_CompanyDTO>();
     }
 
   }

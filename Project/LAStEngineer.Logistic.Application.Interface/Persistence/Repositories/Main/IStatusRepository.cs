@@ -4,5 +4,6 @@ namespace LAStEngineer.Logistic.Application.Interface.Persistence.Repositories.M
 {
   public interface IStatusRepository : IGenericRepository<Status>
   {
+
   }
 }

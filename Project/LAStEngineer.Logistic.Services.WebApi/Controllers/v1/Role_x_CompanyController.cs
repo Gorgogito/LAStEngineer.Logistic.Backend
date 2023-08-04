@@ -10,24 +10,22 @@ namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
   [Route("api/v{version:apiVersion}/[controller]")]
   [ApiController]
   [ApiVersion("1.0", Deprecated = false)]
-  public class RoleController : Controller
+  public class Role_x_CompanyController : Controller
   {
 
-    private readonly IRoleApplication _roleApplication;
+    private readonly IRole_x_CompanyApplication _entityApplication;
 
-    public RoleController(IRoleApplication roleApplication)
-    {
-      _roleApplication = roleApplication;
-    }
+    public Role_x_CompanyController(IRole_x_CompanyApplication entityApplication)
+    { _entityApplication = entityApplication; }
 
     #region "Métodos Sincronos"
 
     [HttpPost("Insert")]
-    public IActionResult Insert([FromBody] RoleDTO roleDto)
+    public IActionResult Insert([FromBody] Role_x_CompanyDTO entityDto)
     {
-      if (roleDto == null)
+      if (entityDto == null)
         return BadRequest();
-      var response = _roleApplication.Insert(roleDto);
+      var response = _entityApplication.Insert(entityDto);
       if (response.IsSuccess)
         return Ok(response);
 
@@ -35,35 +33,35 @@ namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
     }
 
     [HttpPut("Update")]
-    public IActionResult Update([FromBody] RoleDTO roleDto)
+    public IActionResult Update([FromBody] Role_x_CompanyDTO entityDto)
     {
-      if (roleDto == null)
+      if (entityDto == null)
         return BadRequest();
-      var response = _roleApplication.Update(roleDto);
+      var response = _entityApplication.Update(entityDto);
       if (response.IsSuccess)
         return Ok(response);
 
       return BadRequest(response.Message);
     }
 
-    [HttpDelete("Delete/{Id}")]
-    public IActionResult Delete(string Id)
+    [HttpDelete("Delete")]
+    public IActionResult Delete([FromQuery] string roleId, [FromQuery] string companyId)
     {
-      if (string.IsNullOrEmpty(Id))
+      if (string.IsNullOrEmpty(roleId) || string.IsNullOrEmpty(companyId))
         return BadRequest();
-      var response = _roleApplication.Delete(Id);
+      var response = _entityApplication.Delete(roleId, companyId);
       if (response.IsSuccess)
         return Ok(response);
 
       return BadRequest(response.Message);
     }
 
-    [HttpGet("Get/{Id}")]
-    public IActionResult Get(string Id)
+    [HttpGet("Get")]
+    public IActionResult Get([FromQuery] string roleId, [FromQuery] string companyId)
     {
-      if (string.IsNullOrEmpty(Id))
+      if (string.IsNullOrEmpty(roleId) || string.IsNullOrEmpty(companyId))
         return BadRequest();
-      var response = _roleApplication.Get(Id);
+      var response = _entityApplication.Get(roleId, companyId);
       if (response.IsSuccess)
         return Ok(response);
 
@@ -73,22 +71,23 @@ namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
     [HttpGet("GetAll")]
     public IActionResult GetAll()
     {
-      var response = _roleApplication.GetAll();
+      var response = _entityApplication.GetAll();
       if (response.IsSuccess)
         return Ok(response);
 
       return BadRequest(response.Message);
     }
+
     #endregion
 
     #region "Métodos Asincronos"
 
     [HttpPost("InsertAsync")]
-    public async Task<IActionResult> InsertAsync([FromBody] RoleDTO roleDto)
+    public async Task<IActionResult> InsertAsync([FromBody] Role_x_CompanyDTO entityDto)
     {
-      if (roleDto == null)
+      if (entityDto == null)
         return BadRequest();
-      var response = await _roleApplication.InsertAsync(roleDto);
+      var response = await _entityApplication.InsertAsync(entityDto);
       if (response.IsSuccess)
         return Ok(response);
 
@@ -96,35 +95,35 @@ namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
     }
 
     [HttpPut("UpdateAsync")]
-    public async Task<IActionResult> UpdateAsync([FromBody] RoleDTO roleDto)
+    public async Task<IActionResult> UpdateAsync([FromBody] Role_x_CompanyDTO entityDto)
     {
-      if (roleDto == null)
+      if (entityDto == null)
         return BadRequest();
-      var response = await _roleApplication.UpdateAsync(roleDto);
+      var response = await _entityApplication.UpdateAsync(entityDto);
       if (response.IsSuccess)
         return Ok(response);
 
       return BadRequest(response.Message);
     }
 
-    [HttpDelete("DeleteAsync/{Id}")]
-    public async Task<IActionResult> DeleteAsync(string Id)
+    [HttpDelete("DeleteAsync")]
+    public async Task<IActionResult> DeleteAsync([FromQuery] string roleId, [FromQuery] string companyId)
     {
-      if (string.IsNullOrEmpty(Id))
+      if (string.IsNullOrEmpty(roleId) || string.IsNullOrEmpty(companyId))
         return BadRequest();
-      var response = await _roleApplication.DeleteAsync(Id);
+      var response = await _entityApplication.DeleteAsync(roleId, companyId);
       if (response.IsSuccess)
         return Ok(response);
 
       return BadRequest(response.Message);
     }
 
-    [HttpGet("GetAsync/{Id}")]
-    public async Task<IActionResult> GetAsync(string Id)
+    [HttpGet("GetAsync")]
+    public async Task<IActionResult> GetAsync([FromQuery] string roleId, [FromQuery] string companyId)
     {
-      if (string.IsNullOrEmpty(Id))
+      if (string.IsNullOrEmpty(roleId) || string.IsNullOrEmpty(companyId))
         return BadRequest();
-      var response = await _roleApplication.GetAsync(Id);
+      var response = await _entityApplication.GetAsync(roleId, companyId);
       if (response.IsSuccess)
         return Ok(response);
 
@@ -134,7 +133,7 @@ namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
     [HttpGet("GetAllAsync")]
     public async Task<IActionResult> GetAllAsync()
     {
-      var response = await _roleApplication.GetAllAsync();
+      var response = await _entityApplication.GetAllAsync();
       if (response.IsSuccess)
         return Ok(response);
 

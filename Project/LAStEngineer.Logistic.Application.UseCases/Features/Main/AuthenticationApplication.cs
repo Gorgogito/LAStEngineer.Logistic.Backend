@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using LAStEngineer.Logistic.Application.DTO.Objects.Main;
 using LAStEngineer.Logistic.Application.Interface;
-using LAStEngineer.Logistic.Application.Interface.UseCases;
+using LAStEngineer.Logistic.Application.Interface.UseCases.Main;
 using LAStEngineer.Logistic.Application.Validator;
 using LAStEngineer.Logistic.Cross.Common;
 
 namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 {
-  public class AuthenticationApplication : IAuthenticationApplication
+    public class AuthenticationApplication : IAuthenticationApplication
   {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;

@@ -1,7 +1,7 @@
 ﻿using LAStEngineer.Logistic.Application.DTO.Objects.Main;
 using LAStEngineer.Logistic.Cross.Common;
 
-namespace LAStEngineer.Logistic.Application.Interface.UseCases
+namespace LAStEngineer.Logistic.Application.Interface.UseCases.Main
 {
   public interface IUserApplication
   {
@@ -14,7 +14,7 @@ namespace LAStEngineer.Logistic.Application.Interface.UseCases
     Response<UserDTO> Get(string Id);
     Response<IEnumerable<UserDTO>> GetAll();
     ResponsePagination<IEnumerable<UserDTO>> GetAllWithPagination(int pageNumber, int pageSize);
-    
+
     #endregion
 
     #region Métodos Asíncronos
@@ -25,7 +25,7 @@ namespace LAStEngineer.Logistic.Application.Interface.UseCases
     Task<Response<UserDTO>> GetAsync(string Id);
     Task<Response<IEnumerable<UserDTO>>> GetAllAsync();
     Task<ResponsePagination<IEnumerable<UserDTO>>> GetAllWithPaginationAsync(int pageNumber, int pageSize);
-    
+
     #endregion
 
   }

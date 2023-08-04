@@ -16,10 +16,12 @@ namespace LAStEngineer.Logistic.Infrastructure
       services.AddSingleton<IdentityDbContext>();
       services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+      services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+      services.AddScoped<IStatusRepository, StatusRepository>();
       services.AddScoped<ICompanyRepository, CompanyRepository>();
       services.AddScoped<IRoleRepository, RoleRepository>();
       services.AddScoped<IUserRepository, UserRepository>();
-      services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+      services.AddScoped<IRole_x_CompanyRepository, Role_x_CompanyRepository>();
 
       return services;
     }

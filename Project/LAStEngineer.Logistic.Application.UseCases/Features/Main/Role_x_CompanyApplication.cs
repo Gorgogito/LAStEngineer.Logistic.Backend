@@ -1,20 +1,19 @@
 ﻿using AutoMapper;
 using LAStEngineer.Logistic.Application.DTO.Objects.Main;
 using LAStEngineer.Logistic.Application.Interface;
+using LAStEngineer.Logistic.Application.Interface.UseCases.Main;
 using LAStEngineer.Logistic.Cross.Common;
 using LAStEngineer.Logistic.Domain.Entities.Main;
-using LAStEngineer.Logistic.Application.Validator;
-using LAStEngineer.Logistic.Application.Interface.UseCases.Main;
 
 namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 {
-    public class UserApplication : IUserApplication
+  public class Role_x_CompanyApplication: IRole_x_CompanyApplication
   {
 
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public UserApplication(IUnitOfWork unitOfWork, IMapper mapper)
+    public Role_x_CompanyApplication(IUnitOfWork unitOfWork, IMapper mapper)
     {
       _unitOfWork = unitOfWork;
       _mapper = mapper;
@@ -22,13 +21,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 
     #region Métodos Síncronos
 
-    public Response<bool> Insert(UserDTO entitiesDto)
+    public Response<bool> Insert(Role_x_CompanyDTO entitiesDto)
     {
       var response = new Response<bool>();
       try
       {
-        var entity = _mapper.Map<User>(entitiesDto);
-        response.Data = _unitOfWork.UserRepository.Insert(entity);
+        var entity = _mapper.Map<Role_x_Company>(entitiesDto);
+        response.Data = _unitOfWork.Role_x_CompanyRepository.Insert(entity);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -43,13 +42,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public Response<bool> Update(UserDTO entitiesDto)
+    public Response<bool> Update(Role_x_CompanyDTO entitiesDto)
     {
       var response = new Response<bool>();
       try
       {
-        var entity = _mapper.Map<User>(entitiesDto);
-        response.Data = _unitOfWork.UserRepository.Update(entity);
+        var entity = _mapper.Map<Role_x_Company>(entitiesDto);
+        response.Data = _unitOfWork.Role_x_CompanyRepository.Update(entity);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -63,12 +62,12 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public Response<bool> Delete(string KeyId)
+    public Response<bool> Delete(string roleId, string companyId)
     {
       var response = new Response<bool>();
       try
       {
-        response.Data = _unitOfWork.UserRepository.Delete(KeyId);
+        response.Data = _unitOfWork.Role_x_CompanyRepository.Delete(roleId, companyId);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -82,13 +81,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public Response<UserDTO> Get(string KeyId)
+    public Response<Role_x_CompanyDTO> Get(string roleId, string companyId)
     {
-      var response = new Response<UserDTO>();
+      var response = new Response<Role_x_CompanyDTO>();
       try
       {
-        var entity = _unitOfWork.UserRepository.Get(KeyId);
-        response.Data = _mapper.Map<UserDTO>(entity);
+        var entity = _unitOfWork.Role_x_CompanyRepository.Get(roleId, companyId);
+        response.Data = _mapper.Map<Role_x_CompanyDTO>(entity);
         if (response.Data != null)
         {
           response.IsSuccess = true;
@@ -102,13 +101,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public Response<IEnumerable<UserDTO>> GetAll()
+    public Response<IEnumerable<Role_x_CompanyDTO>> GetAll()
     {
-      var response = new Response<IEnumerable<UserDTO>>();
+      var response = new Response<IEnumerable<Role_x_CompanyDTO>>();
       try
       {
-        var entities = _unitOfWork.UserRepository.GetAll();
-        response.Data = _mapper.Map<IEnumerable<UserDTO>>(entities);
+        var entities = _unitOfWork.Role_x_CompanyRepository.GetAll();
+        response.Data = _mapper.Map<IEnumerable<Role_x_CompanyDTO>>(entities);
         if (response.Data != null)
         {
           response.IsSuccess = true;
@@ -122,15 +121,15 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public ResponsePagination<IEnumerable<UserDTO>> GetAllWithPagination(int pageNumber, int pageSize)
+    public ResponsePagination<IEnumerable<Role_x_CompanyDTO>> GetAllWithPagination(int pageNumber, int pageSize)
     {
-      var response = new ResponsePagination<IEnumerable<UserDTO>>();
+      var response = new ResponsePagination<IEnumerable<Role_x_CompanyDTO>>();
       try
       {
-        var count = _unitOfWork.UserRepository.Count();
+        var count = _unitOfWork.Role_x_CompanyRepository.Count();
 
-        var customers = _unitOfWork.UserRepository.GetAllWithPagination(pageNumber, pageSize);
-        response.Data = _mapper.Map<IEnumerable<UserDTO>>(customers);
+        var customers = _unitOfWork.Role_x_CompanyRepository.GetAllWithPagination(pageNumber, pageSize);
+        response.Data = _mapper.Map<IEnumerable<Role_x_CompanyDTO>>(customers);
 
         if (response.Data != null)
         {
@@ -153,7 +152,7 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       var response = new Response<int>();
       try
       {
-        response.Data = _unitOfWork.UserRepository.Count();
+        response.Data = _unitOfWork.Role_x_CompanyRepository.Count();
         if (response.Data != null)
         {
           response.IsSuccess = true;
@@ -171,13 +170,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 
     #region Métodos Asíncronos
 
-    public async Task<Response<bool>> InsertAsync(UserDTO entitiesDto)
+    public async Task<Response<bool>> InsertAsync(Role_x_CompanyDTO entitiesDto)
     {
       var response = new Response<bool>();
       try
       {
-        var entity = _mapper.Map<User>(entitiesDto);
-        response.Data = await _unitOfWork.UserRepository.InsertAsync(entity);
+        var entity = _mapper.Map<Role_x_Company>(entitiesDto);
+        response.Data = await _unitOfWork.Role_x_CompanyRepository.InsertAsync(entity);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -191,13 +190,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public async Task<Response<bool>> UpdateAsync(UserDTO entitiesDto)
+    public async Task<Response<bool>> UpdateAsync(Role_x_CompanyDTO entitiesDto)
     {
       var response = new Response<bool>();
       try
       {
-        var entity = _mapper.Map<User>(entitiesDto);
-        response.Data = await _unitOfWork.UserRepository.UpdateAsync(entity);
+        var entity = _mapper.Map<Role_x_Company>(entitiesDto);
+        response.Data = await _unitOfWork.Role_x_CompanyRepository.UpdateAsync(entity);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -211,12 +210,12 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public async Task<Response<bool>> DeleteAsync(string KeyId)
+    public async Task<Response<bool>> DeleteAsync(string roleId, string companyId)
     {
       var response = new Response<bool>();
       try
       {
-        response.Data = await _unitOfWork.UserRepository.DeleteAsync(KeyId);
+        response.Data = await _unitOfWork.Role_x_CompanyRepository.DeleteAsync(roleId, companyId);
         if (response.Data)
         {
           response.IsSuccess = true;
@@ -230,13 +229,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public async Task<Response<UserDTO>> GetAsync(string KeyId)
+    public async Task<Response<Role_x_CompanyDTO>> GetAsync(string roleId, string companyId)
     {
-      var response = new Response<UserDTO>();
+      var response = new Response<Role_x_CompanyDTO>();
       try
       {
-        var customer = await _unitOfWork.UserRepository.GetAsync(KeyId);
-        response.Data = _mapper.Map<UserDTO>(customer);
+        var customer = await _unitOfWork.Role_x_CompanyRepository.GetAsync(roleId, companyId);
+        response.Data = _mapper.Map<Role_x_CompanyDTO>(customer);
         if (response.Data != null)
         {
           response.IsSuccess = true;
@@ -250,13 +249,13 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public async Task<Response<IEnumerable<UserDTO>>> GetAllAsync()
+    public async Task<Response<IEnumerable<Role_x_CompanyDTO>>> GetAllAsync()
     {
-      var response = new Response<IEnumerable<UserDTO>>();
+      var response = new Response<IEnumerable<Role_x_CompanyDTO>>();
       try
       {
-        var entities = await _unitOfWork.UserRepository.GetAllAsync();
-        response.Data = _mapper.Map<IEnumerable<UserDTO>>(entities);
+        var entities = await _unitOfWork.Role_x_CompanyRepository.GetAllAsync();
+        response.Data = _mapper.Map<IEnumerable<Role_x_CompanyDTO>>(entities);
         if (response.Data != null)
         {
           response.IsSuccess = true;
@@ -270,15 +269,15 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       return response;
     }
 
-    public async Task<ResponsePagination<IEnumerable<UserDTO>>> GetAllWithPaginationAsync(int pageNumber, int pageSize)
+    public async Task<ResponsePagination<IEnumerable<Role_x_CompanyDTO>>> GetAllWithPaginationAsync(int pageNumber, int pageSize)
     {
-      var response = new ResponsePagination<IEnumerable<UserDTO>>();
+      var response = new ResponsePagination<IEnumerable<Role_x_CompanyDTO>>();
       try
       {
-        var count = _unitOfWork.UserRepository.Count();
+        var count = _unitOfWork.Role_x_CompanyRepository.Count();
 
-        var customers = _unitOfWork.UserRepository.GetAllWithPagination(pageNumber, pageSize);
-        response.Data = _mapper.Map<IEnumerable<UserDTO>>(customers);
+        var customers = _unitOfWork.Role_x_CompanyRepository.GetAllWithPagination(pageNumber, pageSize);
+        response.Data = _mapper.Map<IEnumerable<Role_x_CompanyDTO>>(customers);
 
         if (response.Data != null)
         {
@@ -302,7 +301,7 @@ namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
       try
       {
         //var entities = await _unitOfWork.RoleRepository.CountAsync();
-        response.Data = _unitOfWork.UserRepository.CountAsync().Result;
+        response.Data = _unitOfWork.Role_x_CompanyRepository.CountAsync().Result;
         if (response.Data != null)
         {
           response.IsSuccess = true;

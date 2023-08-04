@@ -1,12 +1,12 @@
 ﻿using LAStEngineer.Logistic.Application.DTO.Objects.Main;
-using LAStEngineer.Logistic.Application.Interface.UseCases;
+using LAStEngineer.Logistic.Application.Interface.UseCases.Main;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LAStEngineer.Logistic.Services.WebApi.Controllers.v1
 {
 
-  [Authorize]
+    [Authorize]
   [Route("api/v{version:apiVersion}/[controller]")]
   [ApiController]
   [ApiVersion("1.0", Deprecated = false)]

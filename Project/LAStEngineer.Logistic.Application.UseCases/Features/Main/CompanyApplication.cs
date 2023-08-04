@@ -3,7 +3,7 @@ using LAStEngineer.Logistic.Application.DTO.Objects.Main;
 using LAStEngineer.Logistic.Application.Interface;
 using LAStEngineer.Logistic.Domain.Entities.Main;
 using LAStEngineer.Logistic.Cross.Common;
-using LAStEngineer.Logistic.Application.Interface.UseCases;
+using LAStEngineer.Logistic.Application.Interface.UseCases.Main;
 
 namespace LAStEngineer.Logistic.Application.UseCases.Features.Main
 {

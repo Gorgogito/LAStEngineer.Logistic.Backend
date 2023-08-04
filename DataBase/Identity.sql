@@ -763,3 +763,174 @@ BEGIN
     WHERE UserName = @UserName and Password = DBO.EncryptString(@Password, '@');
 END
 GO
+
+
+
+---------------------------------------------------------------------------------------
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[StatusGetByID]
+(@KeyId nvarchar(5))
+AS
+BEGIN
+  SELECT [KeyId], [Name], [Description], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [Status]
+  WHERE KeyId = @KeyId;
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[StatusList]
+AS
+BEGIN
+  SELECT [KeyId], [Name], [Description], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [Status];
+END
+GO
+
+
+
+
+---------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyInsert]
+(
+ @RoleId           nvarchar(5),
+ @CompanyId        nvarchar(5),
+ @StateId          nvarchar(2),
+ @IsSystem         bit,
+ @CreatedDate      datetime2(7),
+ @CreatedBy        nvarchar(5),
+ @LastModifiedDate datetime2(7),
+ @LastModifiedBy   nvarchar(5)
+)
+AS
+BEGIN
+  INSERT INTO [Role_x_Company] ([RoleId], [CompanyId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy])
+  VALUES(@RoleId, @CompanyId, @StateId, @IsSystem, @CreatedDate, @CreatedBy, @LastModifiedDate, @LastModifiedBy);
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyUpdate]
+(
+ @RoleId           nvarchar(5),
+ @CompanyId        nvarchar(5),
+ @StateId          nvarchar(2),
+ @IsSystem         bit,
+ @CreatedDate      datetime2(7),
+ @CreatedBy        nvarchar(5),
+ @LastModifiedDate datetime2(7),
+ @LastModifiedBy   nvarchar(5)
+)
+AS
+BEGIN
+  UPDATE [Role_x_Company]
+    SET
+      [StateId]          = @StateId,
+      [IsSystem]         = @IsSystem,
+      [CreatedDate]      = @CreatedDate,
+      [CreatedBy]        = @CreatedBy,
+      [LastModifiedDate] = @LastModifiedDate,
+      [LastModifiedBy]   = @LastModifiedBy
+  WHERE [RoleId] = @RoleId and [CompanyId] = @CompanyId;
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyDelete]
+(
+ @RoleId           nvarchar(5),
+ @CompanyId        nvarchar(5)
+)
+AS
+BEGIN
+  DELETE [Role_x_Company]
+  WHERE [RoleId] = @RoleId and [CompanyId] = @CompanyId;
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyGetByID]
+(
+ @RoleId           nvarchar(5),
+ @CompanyId        nvarchar(5)
+)
+AS
+BEGIN
+  SELECT [RoleId], [CompanyId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [Role_x_Company]
+  WHERE [RoleId] = @RoleId and [CompanyId] = @CompanyId;
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyList]
+AS
+BEGIN
+  SELECT [RoleId], [CompanyId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [Role_x_Company];
+END
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Role_x_CompanyListWithPagination]
+(
+  @PageNumber int,
+  @PageSize   int
+)
+AS
+BEGIN
+  SELECT [RoleId], [CompanyId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+  FROM [Role_x_Company]
+  ORDER BY [RoleId], [CompanyId]
+  OFFSET (@PageNumber - 1) * @PageSize ROWS
+  FETCH NEXT @PageSize ROWS ONLY
+END
+GO
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[UserGetByUserAndPassword]
+(
+  @UserName varchar(50),
+  @Password varchar(50)
+)
+AS
+BEGIN
+    SELECT [KeyId], [UserName], [Password], [Description], [Observation], [Names], [Surnames], [Phone], [EMail], [Image], [Token], [RoleId], [StateId], [IsSystem], [CreatedDate], [CreatedBy], [LastModifiedDate], [LastModifiedBy]
+    FROM [User]
+    WHERE UserName = @UserName and Password = DBO.EncryptString(@Password, '@');
+END
+GO
+
+
